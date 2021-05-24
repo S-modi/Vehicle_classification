@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
-
+# SARTHAK MODI
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 @app.route("/") 
 def index():
