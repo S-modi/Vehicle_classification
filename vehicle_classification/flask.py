@@ -1,6 +1,4 @@
 import os
-from uuid import uuid4
-
 from flask import Flask, request, render_template, send_from_directory
 import numpy as np
 from tensorflow.keras.preprocessing import image
@@ -9,10 +7,7 @@ from tensorflow.keras.models import load_model
 app = Flask(__name__)
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
-
-classes = ['cat','dog'] # this is what we will see in html page
-
-@app.route("/") # by this index function will converted into flask function
+@app.route("/") 
 def index():
     return render_template("index.html")
 
